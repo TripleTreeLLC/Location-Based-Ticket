@@ -1,0 +1,43 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="mobileView" id="mainView">
+    <div class="cancelButton" id="cancel" onclick="cancel()">
+      <img src="cancel.png" alt="" class="cancelImage">
+    </div>
+    <div class="headerContent">
+      <h1 class="topHeader">Sellout</h1>
+      <h2 class="bigHeader">Recap</h2>
+      <h3 class="dateTime">@ Redbrain Media</h3>
+    </div>
+    <div class="qrContent" id="qr">
+      <img class="qrCode" src="qrcode.png" alt="">
+    </div>
+    <div class="ticketContent" id="ticket">
+      <img class="ticketImage" src="ticket.png" alt="">
+      <div class="ticketInfo">
+        <h4 class="ticketText">10:00 a.m.</h4>
+        <hr class="ticketHr">
+        <h4 class="ticketText checkIn" style="color: #F50057;" onclick="ticketToggle()">Check-in</h4>
+      </div>
+    </div>
+    <div class="preConcert" id="pre">
+      <img src="concert.png" alt="" class="preImage">
+      <hr class="ticketHr">
+      <h3 class="getToShow" id="alert">Finding your location...</h3>
+    </div>
+    <div class="footerContent">
+      <img id="indicator" class="footerImage" src="demo.png" alt="" onclick="getLocation()">
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/location.js"></script>
